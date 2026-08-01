@@ -1,13 +1,4 @@
-"""
-Data loading utilities for UAMP-Net.
 
-The dataset code supports ImageFolder-style datasets. For smoke testing it can also
-construct deterministic synthetic image tensors and labels that follow the split and
-class-count structure defined in the paper configuration.
-
-The real training path intentionally avoids dataset-specific shortcuts so that
-PlantVillage, PlantDoc, and CUB-200-2011 can be evaluated under a shared protocol.
-"""
 
 from __future__ import annotations
 
