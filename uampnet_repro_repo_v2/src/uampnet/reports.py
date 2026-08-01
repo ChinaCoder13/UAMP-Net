@@ -1,9 +1,4 @@
-"""
-Report/table generation utilities.
 
-The functions here generate CSV tables and expanded xlsx-ready data records.
-The xlsx workbook is created by the repository artifact generation script.
-"""
 
 from __future__ import annotations
 
