@@ -1,12 +1,4 @@
-"""
-Configuration and reproducibility utilities for UAMP-Net.
 
-This module keeps all paper-level hyperparameters out of the training scripts.
-The repository is designed so that the same scripts can be used for:
-1. real dataset training;
-2. deterministic smoke-test artifact generation;
-3. table and figure regeneration from stored evaluation outputs.
-"""
 
 from __future__ import annotations
 
