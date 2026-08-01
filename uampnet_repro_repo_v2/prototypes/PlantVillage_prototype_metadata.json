@@ -1,0 +1,10 @@
+{
+  "dataset": "PlantVillage",
+  "prototype_count": 79,
+  "class_count_used": 20,
+  "descriptor_dim": 256,
+  "k_max": 10,
+  "mean_reliability": 0.3431631326675415,
+  "mean_uncertainty": 0.6568368077278137,
+  "artifact_type": "deterministic_smoke_test"
+}

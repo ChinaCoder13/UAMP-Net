@@ -1,0 +1,10 @@
+{
+  "dataset": "CUB-200-2011",
+  "prototype_count": 79,
+  "class_count_used": 20,
+  "descriptor_dim": 256,
+  "k_max": 12,
+  "mean_reliability": 0.3637753427028656,
+  "mean_uncertainty": 0.636224627494812,
+  "artifact_type": "deterministic_smoke_test"
+}

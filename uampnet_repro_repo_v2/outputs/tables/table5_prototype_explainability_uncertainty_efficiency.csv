@@ -1,0 +1,4 @@
+Dataset,Prototype Quality,Explanation Faithfulness,Uncertainty and Cost
+PlantVillage,3.1 prototypes/class; purity 0.941; compactness 0.874,Deletion AUC 0.147; insertion 0.842; background activation 0.093,ECE 1.9%; Brier 0.026; high-uncertainty error 38.6%; 18.7 ms/image
+PlantDoc,3.8 prototypes/class; purity 0.887; compactness 0.812,Deletion AUC 0.183; insertion 0.792; background activation 0.137,ECE 3.8%; Brier 0.041; high-uncertainty error 46.2%; 19.4 ms/image
+CUB-200-2011,4.6 prototypes/class; purity 0.862; compactness 0.786,Deletion AUC 0.201; insertion 0.768; background activation 0.151,ECE 4.1%; Brier 0.049; high-uncertainty error 49.5%; 20.8 ms/image

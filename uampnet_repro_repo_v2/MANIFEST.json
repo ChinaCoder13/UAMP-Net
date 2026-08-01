@@ -1,0 +1,19 @@
+{
+  "repository": "uampnet_repro_repo_v2",
+  "basis": "UAMP-Net manuscript structure and result sections",
+  "transparency": "Prefilled artifacts are deterministic smoke-test artifacts, not real-dataset evidence.",
+  "figure_files": [
+    "outputs/figures/fig3_prototype_manifold_reliability.png",
+    "outputs/figures/fig4_explanation_consistency_uncertainty.png",
+    "outputs/figures/fig5a_uncertainty_confidence_density.png",
+    "outputs/figures/fig5b_reliability_calibration_curve.png",
+    "outputs/figures/fig5c_prototype_contribution_network.png",
+    "outputs/figures/fig5d_inference_time_macro_f1.png",
+    "outputs/figures/fig5_full_reliability_tradeoff.png"
+  ],
+  "workbook": "outputs/xls/uampnet_results_workbook.xlsx",
+  "logs": "outputs/logs/uampnet_june_2026_full_run.log",
+  "checkpoints": "checkpoints/*.npz and checkpoints/*.json",
+  "prototypes": "prototypes/*_prototype_bank.npz/csv/json",
+  "created_at": "2026-08-02T04:18:00+05:30"
+}

@@ -1,0 +1,69 @@
+project:
+  name: UAMP-Net
+  seed: 20260614
+  output_dir: outputs
+  checkpoint_dir: checkpoints
+  prototype_dir: prototypes
+
+datasets:
+  PlantVillage:
+    root: data/PlantVillage
+    image_count: 54303
+    classes: 38
+    split: {train: 38012, val: 8145, test: 8146}
+    input_size: 224
+    batch_size: 32
+    epochs: 50
+    k_max: 10
+    target: disease_class
+  PlantDoc:
+    root: data/PlantDoc
+    image_count: 2598
+    species: 13
+    disease_labels: 17
+    split: {train: 1818, val: 390, test: 390}
+    input_size: 224
+    batch_size: 32
+    epochs: 50
+    k_max: 10
+    target: disease_label
+  CUB-200-2011:
+    root: data/CUB_200_2011
+    image_count: 11788
+    classes: 200
+    split: {train: 5394, val: 600, test: 5794}
+    input_size: 224
+    batch_size: 32
+    epochs: 60
+    k_max: 12
+    target: bird_species
+
+model:
+  backbone: convnext_tiny
+  pretrained: true
+  descriptor_dim: 256
+  local_pool_kernel: 3
+  arm_quantile: 0.85
+  prototype_activation_threshold: 0.03
+  prototype_update_interval: 5
+  top_l_candidates: 3
+
+optimization:
+  optimizer: AdamW
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  warmup_epochs: 5
+  early_stopping_patience: 10
+  seeds: [20260601, 20260607, 20260614]
+
+loss_weights:
+  compactness: 0.15
+  separation: 0.08
+  activation_consistency: 0.06
+  uncertainty: 0.04
+
+reporting:
+  make_figures: true
+  make_tables: true
+  make_workbook: true
+  figure_dpi: 300

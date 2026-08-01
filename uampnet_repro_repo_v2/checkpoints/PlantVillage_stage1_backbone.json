@@ -1,0 +1,8 @@
+{
+  "dataset": "PlantVillage",
+  "stage": "stage1_backbone",
+  "epoch": 5,
+  "seed": 20260614,
+  "artifact_type": "deterministic_smoke_test_checkpoint",
+  "note": "Replace with full PyTorch checkpoint after real dataset training."
+}

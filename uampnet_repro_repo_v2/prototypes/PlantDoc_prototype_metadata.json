@@ -1,0 +1,10 @@
+{
+  "dataset": "PlantDoc",
+  "prototype_count": 68,
+  "class_count_used": 17,
+  "descriptor_dim": 256,
+  "k_max": 10,
+  "mean_reliability": 0.33959150314331055,
+  "mean_uncertainty": 0.6604084968566895,
+  "artifact_type": "deterministic_smoke_test"
+}

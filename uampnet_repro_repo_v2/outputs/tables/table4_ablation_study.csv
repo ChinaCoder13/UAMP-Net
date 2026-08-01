@@ -1,0 +1,6 @@
+Variant,Main Change,F1 Across Datasets: PlantVillage / PlantDoc / CUB (%),Key Observation
+Backbone only,ConvNeXt-Tiny classifier,98.25 / 82.08 / 86.91,"Strong baseline, but no structured local evidence"
++ ARM,Adds activation response mining,98.57 / 84.10 / 88.04,Improves region localization and reduces background dependence
++ VIGMM,Adds Bayesian prototypes only,98.49 / 83.62 / 87.61,"Improves class structure, but prototypes are less stable without activation guidance"
+ARM + VIGMM,Uses activation-selected prototypes,98.82 / 85.73 / 88.91,Stronger prototype purity and better fine-grained separation
+Full UAMP-Net,Adds reliability and uncertainty,99.03 / 86.94 / 89.65,Best result; unstable prototypes are down-weighted
