@@ -1,10 +1,4 @@
-"""
-Result figure generation for UAMP-Net.
 
-This file generates only result figures, matching the manuscript's Fig. 3,
-Fig. 4, and Fig. 5 panels. It is designed to work from tabular outputs
-created by evaluation scripts.
-"""
 
 from __future__ import annotations
 
